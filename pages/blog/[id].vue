@@ -25,6 +25,10 @@ const route = useRoute()
 const { data: post, error } = await useApiFetch<Post>(`/posts/${route.params.id}`)
 if (error.value?.statusCode === 404) throw createNotFoundError()
 if (error.value) throw createInternalError()
+
+useHead({
+  title: post.value?.title
+})
 </script>
 
 <style scoped>
