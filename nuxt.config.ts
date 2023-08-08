@@ -14,8 +14,8 @@ export default defineNuxtConfig({
         { src: '/js/scripts.js', defer: true },
         { src: '/js/masonry.pkgd.min.js', defer: true }
       ],
-      style: [
-        'https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700'
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700' }
       ]
     }
   },
